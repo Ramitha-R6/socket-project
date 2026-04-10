@@ -1,0 +1,5 @@
+from analyzer import analyze
+from visualizer import visualize
+
+analyze()
+visualize()

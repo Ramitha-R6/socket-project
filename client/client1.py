@@ -1,7 +1,7 @@
 import socket
 import ssl
 
-HOST = "10.30.200.210"
+HOST = "10.20.201.71"
 PORT = 5000
 
 # Disable certificate verification for self-signed cert

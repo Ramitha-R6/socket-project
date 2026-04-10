@@ -1,3 +1,35 @@
+# SSL Keys (never commit private keys)
 key.pem
+
+# Python
 *.pyc
+*.pyo
 __pycache__/
+*.egg-info/
+dist/
+build/
+.env
+.venv
+venv/
+env/
+
+# Node / Frontend
+frontend/node_modules/
+frontend/dist/
+frontend/.env
+
+# Binary data files (large, auto-generated)
+client/received.bin
+backend/testfile.bin
+data/
+
+# Log files
+*.log
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/

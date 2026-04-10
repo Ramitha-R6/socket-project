@@ -1,7 +1,7 @@
 import socket
 import ssl
 
-HOST = "127.0.0.1"
+HOST = "192.168.206.129"
 PORT = 5000
 
 context = ssl.create_default_context()

@@ -1,0 +1,12 @@
+NETWORK PERFORMANCE TEST FILE
+
+This file is used to simulate secure data transfer over SSL.
+
+We are testing:
+- File transfer speed
+- Network throughput
+- Multi-client performance
+
+This is meaningful content for demonstration.
+
+END OF FILE
