@@ -1,10 +1,10 @@
-# 🔌 Secure Multi-Client Network Monitoring System
+#  Secure Multi-Client Network Monitoring System
 
 A full-stack, real-time network monitoring platform built with **Python Sockets (SSL/TLS)**, **Flask REST API**, and a **React + Vite dashboard**. The system enables a central server to securely transfer files to multiple remote clients over encrypted sockets, while each client reports its download performance back to a live dashboard.
 
 ---
 
-## 📸 Dashboard Preview
+##  Dashboard Preview
 
 | Main Dashboard | Analytics View |
 |---|---|
@@ -12,7 +12,7 @@ A full-stack, real-time network monitoring platform built with **Python Sockets 
 
 ---
 
-## 🏗️ Architecture Overview
+##  Architecture Overview
 
 ```
 ┌─────────────────────────────────────────────────────────────────┐
@@ -38,7 +38,7 @@ A full-stack, real-time network monitoring platform built with **Python Sockets 
 
 ---
 
-## 📁 Project Structure
+##  Project Structure
 
 ```
 socket_project/
@@ -84,14 +84,14 @@ socket_project/
 
 ---
 
-## ✨ Features
+##  Features
 
-### 🔐 Secure File Transfer
+###  Secure File Transfer
 - SSL/TLS encrypted socket connections between server and clients
 - Self-signed certificate support (`cert.pem` / `key.pem`)
 - Multi-threaded server handles simultaneous client connections
 
-### 📊 Real-Time Dashboard
+### Real-Time Dashboard
 - Live metrics: active clients, total downloads, avg/max/min speed
 - Download speed time-series chart (Recharts)
 - Per-client download status table: `ACTIVE`, `COMPLETED`, `FAILED`
@@ -99,7 +99,7 @@ socket_project/
 - Network topology overview and server IP display
 - Auto-refreshing data every few seconds
 
-### 🌐 REST API (Flask)
+###  REST API (Flask)
 | Endpoint | Method | Description |
 |---|---|---|
 | `/network_info` | GET | Server IP, total/active clients, mode |
@@ -108,13 +108,13 @@ socket_project/
 | `/clients` | GET | Per-client detail with status |
 | `/api/log_download` | POST | Receive and store client metrics |
 
-### ⚙️ Automated Scheduling
+###  Automated Scheduling
 - `scheduler.py` supports periodic automated download runs
 - Centralized logging across multiple remote clients
 
 ---
 
-## 🛠️ Tech Stack
+##  Tech Stack
 
 | Layer | Technology |
 |---|---|
@@ -128,7 +128,7 @@ socket_project/
 
 ---
 
-## 🚀 Getting Started
+##  Getting Started
 
 ### Prerequisites
 - Python 3.8+
@@ -152,7 +152,7 @@ cd backend
 openssl req -x509 -newkey rsa:2048 -keyout key.pem -out cert.pem -days 365 -nodes
 ```
 
-> ⚠️ **Note:** `key.pem` is excluded from version control via `.gitignore`. You must generate it locally.
+>  **Note:** `key.pem` is excluded from version control via `.gitignore`. You must generate it locally.
 
 ---
 
@@ -213,7 +213,7 @@ Open your browser at **[http://localhost:5173](http://localhost:5173)**
 
 ---
 
-## 🌐 Multi-Client Setup
+##  Multi-Client Setup
 
 To deploy across multiple machines on the same network:
 
@@ -225,7 +225,7 @@ The Flask API listens on `0.0.0.0:5001`, making it accessible to all clients on 
 
 ---
 
-## 📈 Data Flow
+##  Data Flow
 
 ```
 1. Client connects → SSL handshake → File download begins
@@ -237,7 +237,7 @@ The Flask API listens on `0.0.0.0:5001`, making it accessible to all clients on 
 
 ---
 
-## 🔧 Configuration Reference
+## Configuration Reference
 
 | Variable | File | Default | Description |
 |---|---|---|---|
@@ -250,7 +250,7 @@ The Flask API listens on `0.0.0.0:5001`, making it accessible to all clients on 
 
 ---
 
-## 📦 Dependencies
+##  Dependencies
 
 ### Backend (`backend/requirements.txt`)
 ```
@@ -268,7 +268,7 @@ tailwindcss, vite, postcss, autoprefixer
 
 ---
 
-## 🤝 Contributing
+##  Contributing
 
 1. Fork the repository
 2. Create a new branch: `git checkout -b feature/your-feature`
@@ -278,12 +278,12 @@ tailwindcss, vite, postcss, autoprefixer
 
 ---
 
-## 📄 License
+##  License
 
 This project is open source and available under the [MIT License](LICENSE).
 
 ---
 
 <div align="center">
-  <strong>Built with ❤️ using Python Sockets, Flask & React</strong>
+  <strong>Built with using Python Sockets, Flask & React</strong>
 </div>
